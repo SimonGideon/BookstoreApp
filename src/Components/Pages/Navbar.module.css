@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  padding: 2rem 5rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 7rem;
+}
