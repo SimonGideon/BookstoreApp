@@ -6,7 +6,7 @@
 
 nav {
   display: flex;
-  gap: 20px;
+  gap: 10rem;
   padding: 2rem 5rem;
 }
 
@@ -14,4 +14,15 @@ ul {
   display: flex;
   list-style: none;
   gap: 7rem;
+}
+
+li {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+li * {
+  color: black;
+  text-decoration: none;
 }

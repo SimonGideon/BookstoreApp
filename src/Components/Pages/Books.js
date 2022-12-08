@@ -1,13 +1,13 @@
-import React from 'react';
+import BookList from '../Book-Item';
+import AddBookForm from '../AddBookForm';
 
-class Books extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Books</h1>
-      </div>
-    );
-  }
+function Book() {
+  return (
+    <div>
+      <BookList />
+      <AddBookForm />
+    </div>
+  );
 }
 
-export default Books;
+export default Book;
