@@ -1,5 +1,5 @@
 {
-  "name": "book-store-app",
+  "name": "bookstore-2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,6 +37,11 @@
       "last 1 safari version"
     ]
   },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/eslint-parser": "^7.19.1",
@@ -53,15 +58,10 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SimonGideon/BookstoreApp.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/SimonGideon/BookstoreApp/issues"
   },
