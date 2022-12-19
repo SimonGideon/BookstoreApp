@@ -1,20 +1,17 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import Books from './Components/Pages/Books';
-import Navbar from './Components/Navbar';
-import Cartegory from './Components/Pages/Cartegory';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Books from './Pages/Books';
+import Categories from './Pages/Categories';
 
-function App() {
-  return (
-    <div>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Books />} />
-        <Route path="/Cartegory" element={<Cartegory />} />
-      </Routes>
-    </div>
-  );
-}
+const App = () => (
+  <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Books />} />
+      <Route path="/categories" element={<Categories />} />
+    </Routes>
+  </Router>
+);
 
 export default App;
