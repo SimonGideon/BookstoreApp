@@ -6,14 +6,12 @@ import Categories from './Pages/Categories';
 
 const App = () => (
   <Router>
-  <>
     <Navbar />
     <Routes>
       <Route path="/" element={<Books />} />
       <Route path="/categories" element={<Categories />} />
     </Routes>
   </Router>
-  </>
 );
 
 export default App;
