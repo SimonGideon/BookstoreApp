@@ -1,5 +1,4 @@
-const CHECK_STATUS = 'Bookstore/categories/UNDER_CONSTRUCTION';
-
+const CHECK = 'React-BookStore/categories/Check';
 const initialState = [];
 
 // Action
