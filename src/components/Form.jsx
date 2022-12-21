@@ -3,23 +3,23 @@ import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
 const Form = () => {
-  const [inputData, setInputData] = useState({ id: '', title: '', author: '' });
+  const [inputData, setInputData] = useState({ title: '', author: '' });
 
   const dispatch = useDispatch();
 
   const changeHandler = (e) => {
     setInputData({
       ...inputData,
-      id: new Date().getTime().toString(),
       [e.target.name]: e.target.value,
     });
   };
 
   const addBookHandler = (e) => {
     e.preventDefault();
-    if (inputData.title && inputData.author) {
-      dispatch(addBook(inputData));
-      setInputData({ id: '', title: '', author: '' });
+    const { title, author } = inputData;
+    if (title && author) {
+      dispatch(addBook({ title, author }));
+      setInputData({ title: '', author: '' });
     }
   };
 
