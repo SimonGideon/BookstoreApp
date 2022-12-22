@@ -1,0 +1,53 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 100px;
+  background-color: #fff;
+  letter-spacing: 1.9px;
+}
+
+nav {
+  display: flex;
+  gap: 48px;
+}
+
+nav h1 {
+  color: #0290ff;
+  font-weight: bold;
+  font-size: 1.875rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.avatar {
+  color: #0290ff;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar svg {
+  width: 24px;
+  height: 24px;
+}
+
+.activelink {
+  color: #121212;
+  opacity: 1;
+}
