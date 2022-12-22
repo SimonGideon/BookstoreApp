@@ -1,11 +1,11 @@
-const CHECK = 'React-BookStore/categories/Check';
+const CHECK_STATUS = 'Bookstore/categories/UNDER_CONSTRUCTION';
 
 const initialState = [];
 
 // Action
 
 export const checkStatus = () => ({
-  type: CHECK,
+  type: CHECK_STATUS,
   payload: 'Under construction',
 });
 
@@ -13,7 +13,7 @@ export const checkStatus = () => ({
 
 const categoriesReducer = (state = initialState, action) => {
   switch (action.type) {
-    case CHECK:
+    case CHECK_STATUS:
       return action.payload;
     default:
       return state;

@@ -1,38 +1,44 @@
-const ADD = 'React-BookStore/Books/Add';
-const REMOVE = 'React-BookStore/Books/Remove';
+export const ADD_BOOK = 'Bookstore/books/ADD_BOOK';
+export const REMOVE_BOOK = 'Bookstore/books/REMOVE_BOOK';
+export const FETCH_BOOKS = 'Bookstore/books/FETCH_BOOKS';
 
-const initialState = [{
-  id: '1',
-  title: 'Clean Code',
-  author: 'Robert Martin',
-},
-{
-  id: '2',
-  title: 'Refactoring',
-  author: 'Kent Beck',
-},
-];
+const initialState = [];
 
 // Actions
 
 export const addBook = (book) => ({
-  type: ADD,
+  type: ADD_BOOK,
   book,
 });
 
 export const removeBook = (bookId) => ({
-  type: REMOVE,
+  type: REMOVE_BOOK,
   bookId,
+});
+
+export const fetchBooks = (books) => ({
+  type: FETCH_BOOKS,
+  books,
 });
 
 // Reducer
 
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD:
-      return [...state, { ...action.book, id: new Date().getTime().toString() }];
-    case REMOVE:
-      return state.filter((book) => book.id !== action.bookId);
+    case ADD_BOOK:
+      return [...state, action.book];
+    case REMOVE_BOOK:
+      return state.filter((book) => book.item_id !== action.bookId);
+    case FETCH_BOOKS: {
+      const bookList = [];
+      Object.entries(action.books).forEach(([key, value]) => bookList.push({
+        item_id: key,
+        title: value[0].title,
+        author: value[0].author,
+        category: value[0].category,
+      }));
+      return [...bookList];
+    }
     default:
       return state;
   }
