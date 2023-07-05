@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <h3><b>Book Store</b></h3>
+  <h2><b>Book Store App</b></h2>
 
 </div>
 
